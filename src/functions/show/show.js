@@ -9,6 +9,8 @@ const client = contentful.createClient({
   accessToken: process.env.CONTENTFUL_MANAGEMENT_TOKEN,
 })
 
+const storage = new Map()
+
 exports.handler = async function(event, context) {
   try {
     const id = event.queryStringParameters.id.replace("/", "")
