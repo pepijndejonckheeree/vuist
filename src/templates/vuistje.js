@@ -21,3 +21,4 @@ export default ({ pageContext }) => {
     </Layout>
   )
 }
+//geen graphql meer komt vanuit de gatsby-config.js
